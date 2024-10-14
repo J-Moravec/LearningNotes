@@ -9,3 +9,6 @@
 
 # Ignore object files
 *.o
+
+# Unignore makefile
+!makefile
