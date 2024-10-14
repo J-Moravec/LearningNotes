@@ -23,3 +23,12 @@ Exercise 1 is to add `if (i)` condition to the listing 1.1 and compare to the pr
 Exercise 2 is to try to imagine what happens when variable of type `size_t` equal 0 is decremented with `--`. We don't need to imagine it, we can write it. What happens is that `size_t` is unsigned integer and as such, it underflows and turns into a big number which is definitely greater than 9.
 
 Exercise 4 is to analyze listing 3.2 by adding `printf` calls for intermediate values of `x`.
+
+Exercise 5 is to describe the use of `argc` and `argv` in the listing 3.2. The `argc` is the number of command line arguments, `argv` is an array containing the character strings of command line arguments, with the first element, `argv[0]`, being the name of the program. This means that the array is of the size `argc + 1`.
+
+## Challenges
+
+### Challenge 1: Sequential algorithms
+
+Challenge 1 is to implement two sorting algorithms, a merge sort and a quick sort.
+To test correctness, implement a simple test routine to scan the array and confirm that it is sorted.
