@@ -14,7 +14,7 @@ TARGETS := $(basename $(SOURCES))
 
 LIBS := -lm
 CC := gcc
-CFLAGS := -g -Wall -std=c11
+CFLAGS := -g -Wall -Werror -pedantic -std=c11
 
 .PHONY: all clean
 
@@ -27,9 +27,6 @@ HEADERS = $(patsubst %.c, %.h, $(SOURCES))
 + $(CC) $(CFLAGS) -c $< -o $@
 
 .PRECIOUS: $(TARGET) $(OBJECTS)
-
-$(TARGET): $(OBJECTS)
-+ $(CC) $(OBJECTS) -Wall $(LIBS) -o $@
 
 clean:
 + -rm -f *.o
