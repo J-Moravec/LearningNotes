@@ -29,7 +29,7 @@ void merge(
     memset(arr, 0, sizeof(arr[0]) * (left_len + right_len));
 
 
-    while( (li < left_len) & (ri < right_len) ){
+    while( (li < left_len) && (ri < right_len) ){
 
         if(left[li] < right[ri]){
             arr[i] = left[li];
