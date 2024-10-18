@@ -26,6 +26,14 @@ Exercise 4 is to analyze listing 3.2 by adding `printf` calls for intermediate v
 
 Exercise 5 is to describe the use of `argc` and `argv` in the listing 3.2. The `argc` is the number of command line arguments, `argv` is an array containing the character strings of command line arguments, with the first element, `argv[0]`, being the name of the program. This means that the array is of the size `argc + 1`.
 
+Exercise 6 is to print values of `eps1m01`, and observe the output when the value is changed. Without modifying, `eps1m01` is the lower bound for a fast approach using power of two.
+Likely, modification of this value would result in slower approach towards the solution.
+
+Exercise 7 is to test the example switch statement in a program and leaving some break values.
+This will result in continuing execution of all following case values. Switch itself is quite strange, which is utilized by so called [Duff Device](https://en.wikipedia.org/wiki/Duff%27s_device#Performance) that implements a whole `do-while` withing the `switch` and multiple `case`.
+
+Exercise 8 is to implement some computation using 24-hour clock, such as 3 hours after 10:00 and 8 hours after 20:00.
+
 ## Challenges
 
 ### Challenge 1: Sequential algorithms
