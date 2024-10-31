@@ -34,6 +34,8 @@ This will result in continuing execution of all following case values. Switch it
 
 Exercise 8 is to implement some computation using 24-hour clock, such as 3 hours after 10:00 and 8 hours after 20:00.
 
+Exercise 13 is to show that if the minimal and maximal values for signed long long have similar properties, the smallest integer value for the platform can't be written as a combination of one literal with a minus sign.
+
 ## Challenges
 
 ### Challenge 1: Sequential algorithms
