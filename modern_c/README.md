@@ -36,6 +36,8 @@ Exercise 8 is to implement some computation using 24-hour clock, such as 3 hours
 
 Exercise 13 is to show that if the minimal and maximal values for signed long long have similar properties, the smallest integer value for the platform can't be written as a combination of one literal with a minus sign.
 
+Exercise 14 is to show that if maximum unsigned is `2^16 - 1`, then `-0x8000 has value 32768, too.
+
 ## Challenges
 
 ### Challenge 1: Sequential algorithms
