@@ -38,6 +38,7 @@ Exercise 13 is to show that if the minimal and maximal values for signed long lo
 
 Exercise 14 is to show that if maximum unsigned is `2^16 - 1`, then `-0x8000 has value 32768, too.
 
+Exercise 15 is to show that `-1U`, `-1UL`, and `-1ULL` have the type `unsigned`, `long unsigned`, and `long long unsigned` and hold a maximum values of these types.
 ## Challenges
 
 ### Challenge 1: Sequential algorithms
