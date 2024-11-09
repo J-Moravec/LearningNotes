@@ -12,7 +12,7 @@ SHELL := bash
 SOURCES := $(wildcard *.c)
 TARGETS := $(basename $(SOURCES))
 
-LIBS := -lm
+LDLIBS := -lm
 CC := gcc
 CFLAGS := -g -Wall -Werror -pedantic -std=c11
 
@@ -23,11 +23,12 @@ all: $(TARGETS)
 OBJECTS = $(patsubst %.c, %.o, $(SOURCES))
 HEADERS = $(patsubst %.c, %.h, $(SOURCES))
 
-%.o: %.c $(HEADERS)
-+ $(CC) $(CFLAGS) -c $< -o $@
+# This is being ignored
+#%.o: %.c $(HEADERS)
+#+ $(CC) $(CFLAGS) -c $< -o $@
 
 .PRECIOUS: $(TARGET) $(OBJECTS)
 
 clean:
 + -rm -f *.o
-+ -rm -f $(TARGET)
++ -rm -f $(TARGETS)
